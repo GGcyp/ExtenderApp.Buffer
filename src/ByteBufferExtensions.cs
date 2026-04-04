@@ -11,7 +11,7 @@ namespace ExtenderApp.Buffer
     /// </summary>
     public static class ByteBufferExtensions
     {
-        private static readonly Encoding DefaultEncoding = ExtenderApp.Common.ProgramDirectory.DefaultEncoding;
+        private static readonly Encoding DefaultEncoding = Encoding.UTF8;
 
         #region Write
 
