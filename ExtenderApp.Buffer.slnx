@@ -1,0 +1,11 @@
+<Solution>
+  <Folder Name="/benchmark/">
+    <Project Path="benchmark/ExtenderApp.Buffer.Benchmarks/ExtenderApp.Buffer.Benchmarks.csproj" />
+  </Folder>
+  <Folder Name="/src/">
+    <Project Path="src/ExtenderApp.Buffer.csproj" />
+  </Folder>
+  <Folder Name="/test/">
+    <Project Path="test/ExtenderApp.Buffer.Tests/ExtenderApp.Buffer.Tests.csproj" />
+  </Folder>
+</Solution>
