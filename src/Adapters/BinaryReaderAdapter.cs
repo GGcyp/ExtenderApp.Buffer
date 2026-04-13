@@ -131,11 +131,6 @@ namespace ExtenderApp.Buffer
         public byte[] ToArray() => _reader.Sequence.ToArray();
 
 
-        //[MethodImpl(MethodImplOptions.AggressiveInlining)]
-        //public bool TryReadTo(out ReadOnlySequence<byte> value, SequencePosition delimiter)
-        //{
-        //    // 直接暴露 SequenceReader.TryReadTo
-        //    return _reader.TryReadTo(out value, delimiter);
-        //}
+        public static implicit operator BinaryReaderAdapter(AbstractBufferReader<byte> reader) => new(reader.UnreadSequence);
     }
 }
